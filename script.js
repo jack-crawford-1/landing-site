@@ -51,3 +51,28 @@ wellingtonText.addEventListener("mouseenter", () => {
 wellingtonText.addEventListener("mouseleave", () => {
     mapContainer.style.display = "none";
 });
+
+
+$(document).ready(function () {
+  var nav = $("nav");
+  var body = $("body");
+  var main = $("main");
+
+  $(window).scroll(function () {
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= nav.height()) {
+      nav.addClass("nav-fixed");
+      body.addClass("nav-fixed");
+      main.addClass("nav-fixed");
+    } else {
+      nav.removeClass("nav-fixed");
+      body.removeClass("nav-fixed");
+      main.removeClass("nav-fixed");
+    }
+  });
+});
+
+
+
+
