@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Kenia&family=Montserrat:wght@700;800&family=Oswald:wght@600;700&family=Press+Start+2P&family=Space+Mono:wght@400;700&display=swap');
+
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "space mono", sans-serif;
+	color: #7c7a7d;
+	background-color: #1a1818;
+	font-size: 18px;
+	display: flex;
+	flex-direction: column;
+	max-width: 100%;
+	margin: 0 auto;
+	margin-left: 20px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+main {
+	padding-top: 120px;
+}
+
+nav {
+	display: flex;
+	position: fixed;
+	align-items: center;
+	width: 100%;
+}
+
+.nav-items {
+	display: flex;
+	list-style-type: none;
+	padding: 30px;
+	padding-right: 60px;
+	align-items: center;
+	margin: 0;
+	margin-left: auto;
+}
+
+.nav-item {
+	margin: 10px;
+	padding-right: 20px;
+}
+
+.nav-item a {
+	margin: 10px;
+	padding-right: 10px;
+	text-decoration: none;
+	color: #C33C71;
+}
+
+#logo {
+	padding-left: 30px;
+}
+
+#logo p {
+	font-size: 40px;
+	color: #C33C71;
+}
+
+h2 {
+	font-family: "Oswald", sans-serif;
+	margin-bottom: 0;
+	font-size: 40px;
+}
+
+
+#about-me {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	padding-left: 80px;
+	min-width: 100%;
+
+}
+
+
+#about1 {
+	padding: 15px;
+	padding-top: 0px;
+	color: #C33C71;
+	letter-spacing: 5px;
+	padding-left: 100px;
+	cursor: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/PNG_Test.png/953px-PNG_Test.png?20230921085344"), auto;
+	text-transform: uppercase;
+	transition: 0.5s;
+}
+
+#about1:hover {
+	color: #3CC38E;
+	text-shadow: 0 0 5px #5d4897,
+		0 0 25px #2a282a,
+		0 0 50px #bb5e18,
+		0 0 100px #2615bc;
+	cursor: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/PNG_Test.png/953px-PNG_Test.png?20230921085344"), auto;
+}
+
+#about-text {
+	padding-left: 25px;
+	flex: 1;
+}
+
+aside {
+	flex: 0 0 400px;
+	text-align: center;
+	margin-left: 0px;
+}
+
+aside img {
+	max-width: 100%;
+	height: auto;
+
+    margin-left: 20px;
+    padding-right: 60px;
+}
+
+.contact-section {
+	padding-bottom: 100px;
+}
+
+
+.contact-section h2 {
+	padding-bottom: 20px;
+}
+
+.paint-brush-cursor {
+	cursor: url('https://cdn.custom-cursor.com/db/13602/32/bfdi-eraser-cursor.png'), auto;
+}
+
+#about-text p {
+	cursor: url('https://cdn.custom-cursor.com/db/13602/32/bfdi-eraser-cursor.png'), auto;
+}
+
+footer ul {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+
+}
+
+footer li {
+	list-style-type: none;
+	margin: 40px;
+	text-decoration: none;
+	color: #3CC38E;
+	width: 100%;
+}
+
+input[type=text],
+select,
+textarea {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-top: 6px;
+	margin-bottom: 16px;
+	resize: vertical
+}
+
+input[type=submit] {
+	background-color: #04AA6D;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+
+input[type=submit]:hover {
+	background-color: #45a049;
+}
+
+.contact-section {
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+	width: 80%;
+}
+
+.hidden-text {
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+
+p:hover .hidden-text {
+	opacity: 1;
+}
+
+.paintbrush-cursor {
+	cursor: url('https://cdn.custom-cursor.com/db/13602/32/bfdi-eraser-cursor.png'), auto;
+}
+
+
+
+
+a button {
+	background-color: #3CC38E;
+	color: #000000;
+    font-size: 20px;
+    font-weight: 700;
+	padding: 10px 20px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	text-decoration: none;
+	display: inline-block;
+	margin-left: 100px;
+	margin-top: 20px;
+}
+
+a button:hover {
+	background-color: #e738be;
+    color: #3CC38E;
+}
+
+#mapContainer {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+}
+
+#wellingtonImage {
+	width: 60%;
+	height: auto;
+	margin: 100px;
+	padding: 30px;
+}
+
+
+/* Hide the image by default */
+#projectsLink .hover-image {
+    display: none;
+  }
+  
+  /* Show the image when hovering over the link */
+  #projectsLink a:hover .hover-image {
+    display: inline-block; /* or block, depending on your layout */
+    height: 50px;
+  }
+  
+  /* Hide the text when hovering over the link */
+  #projectsLink a:hover .link-text {
+    display: none;
+  }
