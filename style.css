@@ -12,9 +12,11 @@ body {
 	font-size: 18px;
 	display: flex;
 	flex-direction: column;
-	max-width: 100%;
+	max-width:1200px;
 	margin: 0;
   padding: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 
@@ -32,7 +34,7 @@ nav.nav-fixed {
 }
 
 main {
-	padding-top: 120px;
+	padding-top: 30px;
   display: scroll;
 }
 
@@ -53,7 +55,7 @@ nav {
 	display: flex;
 	list-style-type: none;
 	padding: 30px;
-	padding-right: 60px;
+	padding-right: 90px;
 	align-items: center;
 	margin: 0;
 	margin-left: auto;
@@ -87,7 +89,8 @@ header {
 h2 {
 	font-family: "Oswald", sans-serif;
 	margin-bottom: 0;
-	font-size: 40px;
+	font-size: 30px;
+
 }
 
 
@@ -110,6 +113,7 @@ h2 {
 	cursor: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/PNG_Test.png/953px-PNG_Test.png?20230921085344"), auto;
 	text-transform: uppercase;
 	transition: 0.5s;
+  margin-top: 50px;
 }
 
 #about1:hover {
@@ -127,31 +131,21 @@ h2 {
 }
 
 aside {
-	flex: 0 0 400px;
-	text-align: center;
-	margin-left: 0px;
+  flex: 0 0 400px;
+  text-align: center;
+  margin-left: 0px;
 }
 
 aside img {
-	max-width: 100%;
-	height: auto;
-
-    margin-left: 20px;
-    padding-right: 60px;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto; /* Center the image horizontally */
+  margin-right: auto;
+  display: block; /* Ensures that the image doesn't have extra space underneath */
+  border-radius: 10px;
+  margin-top: 20px; /* Add some top margin as needed */
 }
 
-.contact-section {
-	padding-bottom: 100px;
-}
-
-
-.contact-section h2 {
-	padding-bottom: 20px;
-}
-
-.paint-brush-cursor {
-	cursor: url('https://cdn.custom-cursor.com/db/13602/32/bfdi-eraser-cursor.png'), auto;
-}
 
 #about-text p {
 	cursor: url('https://cdn.custom-cursor.com/db/13602/32/bfdi-eraser-cursor.png'), auto;
@@ -166,44 +160,10 @@ footer ul {
 
 footer li {
 	list-style-type: none;
-	margin: 40px;
+	margin: 0px;
 	text-decoration: none;
 	color: #3CC38E;
 	width: 100%;
-}
-
-input[type=text],
-select,
-textarea {
-	width: 100%;
-	padding: 12px;
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	box-sizing: border-box;
-	margin-top: 6px;
-	margin-bottom: 16px;
-	resize: vertical
-}
-
-input[type=submit] {
-	background-color: #04AA6D;
-	color: white;
-	padding: 12px 20px;
-	border: none;
-	border-radius: 4px;
-	cursor: pointer;
-}
-
-
-input[type=submit]:hover {
-	background-color: #45a049;
-}
-
-.contact-section {
-	border-radius: 5px;
-	background-color: #f2f2f2;
-	padding: 20px;
-	width: 80%;
 }
 
 .hidden-text {
@@ -214,13 +174,6 @@ input[type=submit]:hover {
 p:hover .hidden-text {
 	opacity: 1;
 }
-
-.paintbrush-cursor {
-	cursor: url('https://cdn.custom-cursor.com/db/13602/32/bfdi-eraser-cursor.png'), auto;
-}
-
-
-
 
 a button {
 	background-color: #3CC38E;
@@ -257,18 +210,15 @@ a button:hover {
 }
 
 
-/* Hide the image by default */
 #projectsLink .hover-image {
     display: none;
   }
   
-  /* Show the image when hovering over the link */
   #projectsLink a:hover .hover-image {
     display: inline-block; /* or block, depending on your layout */
     height: 50px;
   }
   
-  /* Hide the text when hovering over the link */
   #projectsLink a:hover .link-text {
     display: none;
   }
@@ -276,8 +226,7 @@ a button:hover {
 footer {
 
   color: #fff;
-  padding: 20px; 
-}
+  padding: 20px; }
 
 footer ul {
   list-style: none; 
@@ -287,4 +236,35 @@ footer ul {
 footer a {
   color: #fff;
   text-decoration: none; 
+}
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* Style for the tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #e738be;
+  color: #fff;
+  text-align: center;
+  border-radius: 3px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 80%;
+  left: 50%;
+  margin-left: -80px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/* Show the tooltip text on hover */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
 }
