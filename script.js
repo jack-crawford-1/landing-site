@@ -22,7 +22,6 @@ aboutParagraphs.forEach((paragraph) => {
 
         span.addEventListener("mouseenter", function () {
             span.style.color = getRandomColor();
-            span.style.fontSize = "26px";
             span.style.padding = "0 2px";
             span.style.opacity = "1";
             span.classList.remove("hidden-text");
@@ -31,9 +30,7 @@ aboutParagraphs.forEach((paragraph) => {
 
         span.addEventListener("mouseleave", function () {
             span.style.color = getRandomColor();
-            span.style.fontSize = "";
             span.style.padding = "0";
-            span.style.fontFamily = ""
             span.style.opacity = "0";
             span.classList.add("hidden-text");
         });

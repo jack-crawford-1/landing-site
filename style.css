@@ -1,24 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Kenia&family=Montserrat:wght@700;800&family=Oswald:wght@600;700&family=Press+Start+2P&family=Space+Mono:wght@400;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Kenia&family=Montserrat:wght@700;800&family=Oswald:wght@600;700&family=Press+Start+2P&family=Space+Mono:wght@400;700&display=swap");
 
 html {
-	scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-	font-family: "space mono", sans-serif;
-	color: #afafaf;
-	background-color: #1e1f2c;
-	font-size: 18px;
-	display: flex;
-	flex-direction: column;
-	max-width:1200px;
-	margin: 0;
+  font-family: "space mono", sans-serif;
+  color: #d6ccccf6;
+  background-color: #1e1f2ce1;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  max-width: auto;
+  margin: 0;
   padding: 0;
-  overflow-x: hidden;
-  overflow-y: hidden;
+  overflow-x: ;
+  overflow-y: ;
 }
-
 
 body.nav-fixed {
   overflow: hidden;
@@ -34,43 +32,42 @@ nav.nav-fixed {
 }
 
 main {
-	padding-top: 30px;
+  padding-top: 30px;
   display: scroll;
 }
 
-
-
 nav {
-	display: flex;
-	position: fixed;
-	align-items: center;
-	width: 100%;
-  background-color: #1e1f2c;
+  display: flex;
+  position: fixed;
+  align-items: center;
+  width: 100%;
+  background-color: #bc95ff38;
   z-index: 100;
-  height: 40px;
+  height: 100px;
+  padding-left: 60px;
+  border-radius: 10px;
 }
 
-
 .nav-items {
-	display: flex;
-	list-style-type: none;
-	padding: 30px;
-	padding-right: 90px;
-	align-items: center;
-	margin: 0;
-	margin-left: auto;
+  display: flex;
+  list-style-type: none;
+  padding: 30px;
+  padding-right: 90px;
+  align-items: center;
+  margin: 0;
+  margin-left: auto;
 }
 
 .nav-item {
-	margin: 10px;
-	padding-right: 20px;
+  margin: 10px;
+  padding-right: 60px;
 }
 
 .nav-item a {
-	margin: 10px;
-	padding-right: 10px;
-	text-decoration: none;
-	color: #C33C71;
+  margin: 10px;
+  padding-right: 10px;
+  text-decoration: none;
+  color: #c33c71;
 }
 
 header {
@@ -78,166 +75,141 @@ header {
 }
 
 #logo {
-	padding-left: 30px;
+  padding-left: 30px;
 }
 
 #logo p {
-	font-size: 40px;
-	color: #C33C71;
+  font-size: 40px;
+  color: #c33c71;
 }
 
 h2 {
-	font-family: "Oswald", sans-serif;
-	margin-bottom: 0;
-	font-size: 30px;
-
+  font-family: "Oswald", sans-serif;
+  margin-bottom: 0;
+  font-size: 30px;
 }
-
 
 #about-me {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: flex-start;
-	padding-left: 80px;
-	min-width: 100%;
-
-}
-
-
-#about1 {
-	padding: 15px;
-	padding-top: 0px;
-	color: #C33C71;
-	letter-spacing: 5px;
-	padding-left: 100px;
-	cursor: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/PNG_Test.png/953px-PNG_Test.png?20230921085344"), auto;
-	text-transform: uppercase;
-	transition: 0.5s;
-  margin-top: 50px;
-}
-
-#about1:hover {
-	color: #3CC38E;
-	text-shadow: 0 0 5px #5d4897,
-		0 0 25px #2a282a,
-		0 0 50px #bb5e18,
-		0 0 100px #2615bc;
-	cursor: url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/PNG_Test.png/953px-PNG_Test.png?20230921085344"), auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding-left: 80px;
+  padding-top: 70px;
+  min-width: 60%;
+  margin-bottom: -100px;
 }
 
 #about-text {
-	padding-left: 25px;
-	flex: 1;
+  padding-left: 25px;
+  flex: 1;
 }
 
 aside {
   flex: 0 0 400px;
   text-align: center;
   margin-left: 0px;
+  height: 600px;
 }
 
 aside img {
   max-width: 100%;
   height: auto;
-  margin-left: auto; /* Center the image horizontally */
+  margin-left: auto;
   margin-right: auto;
-  display: block; /* Ensures that the image doesn't have extra space underneath */
-  border-radius: 10px;
-  margin-top: 20px; /* Add some top margin as needed */
+  display: block;
+  margin-top: 20px;
+  border-radius: 20px;
 }
 
-
 #about-text p {
-	cursor: url('https://cdn.custom-cursor.com/db/13602/32/bfdi-eraser-cursor.png'), auto;
+  cursor: url("https://cdn.custom-cursor.com/db/13602/32/bfdi-eraser-cursor.png"),
+    auto;
 }
 
 footer ul {
-	display: flex;
-	flex-direction: row;
-	width: 100%;
-
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 
 footer li {
-	list-style-type: none;
-	margin: 0px;
-	text-decoration: none;
-	color: #3CC38E;
-	width: 100%;
+  list-style-type: none;
+  margin: 0px;
+  text-decoration: none;
+  color: #3cc38e;
+  width: 100%;
 }
 
 .hidden-text {
-	opacity: 0;
-	transition: opacity 0.3s;
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 
 p:hover .hidden-text {
-	opacity: 1;
+  opacity: 1;
 }
 
 a button {
-	background-color: #3CC38E;
-	color: #000000;
-    font-size: 20px;
-    font-weight: 700;
-	padding: 10px 20px;
-	border: none;
-	border-radius: 5px;
-	cursor: pointer;
-	text-decoration: none;
-	display: inline-block;
-	margin-left: 100px;
-	margin-top: 20px;
+  background-color: #3cc38e;
+  color: #000000;
+  font-size: 20px;
+  font-weight: 700;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 100px;
+  margin-top: 0px;
 }
 
 a button:hover {
-	background-color: #e738be;
-    color: #3CC38E;
+  background-color: #e738be;
+  color: #3cc38e;
 }
 
 #mapContainer {
-	position: absolute;
-	top: 0;
-	left: 0;
-	display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
 }
 
 #wellingtonImage {
-	width: 60%;
-	height: auto;
-	margin: 100px;
-	padding: 30px;
+  width: 60%;
+  height: auto;
+  margin: 100px;
+  padding: 30px;
 }
 
-
 #projectsLink .hover-image {
-    display: none;
-  }
-  
-  #projectsLink a:hover .hover-image {
-    display: inline-block; /* or block, depending on your layout */
-    height: 50px;
-  }
-  
-  #projectsLink a:hover .link-text {
-    display: none;
-  }
+  display: none;
+}
+
+#projectsLink a:hover .hover-image {
+  display: inline-block;
+  height: 50px;
+  overflow: hidden;
+}
+
+#projectsLink a:hover .link-text {
+  display: none;
+}
 
 footer {
-
   color: #fff;
-  padding: 20px; }
+  padding: 20px;
+}
 
 footer ul {
-  list-style: none; 
-  
+  list-style: none;
 }
 
 footer a {
   color: #fff;
-  text-decoration: none; 
+  text-decoration: none;
 }
-
 
 .tooltip {
   position: relative;
@@ -245,14 +217,13 @@ footer a {
   cursor: pointer;
 }
 
-/* Style for the tooltip text */
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 160px;
   background-color: #e738be;
   color: #fff;
   text-align: center;
-  border-radius: 3px;
+  border-radius: 30px;
   padding: 5px;
   position: absolute;
   z-index: 1;
@@ -263,8 +234,24 @@ footer a {
   transition: opacity 0.3s;
 }
 
-/* Show the tooltip text on hover */
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
+}
+
+@media only screen and (max-width: 760px) {
+  aside {
+    display: none;
+  }
+  .about-text {
+    width: 80%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+  }
 }
