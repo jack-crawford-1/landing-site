@@ -6,7 +6,7 @@ html {
 
 body {
   font-family: "space mono", sans-serif;
-  color: #d6ccccf6;
+  color: #ffffffe9;
   background-color: #1e1f2ce1;
   font-size: 18px;
   display: flex;
@@ -41,7 +41,6 @@ nav {
   position: fixed;
   align-items: center;
   width: 100%;
-  background-color: #bc95ff38;
   z-index: 100;
   height: 100px;
   padding-left: 60px;
