@@ -142,6 +142,10 @@ footer li {
   margin-bottom: 10px;
 }
 
+footer li:hover {
+    color: #f9287c;
+  }
+
 .hidden-text {
   opacity: 0;
   transition: opacity 0.3s;
